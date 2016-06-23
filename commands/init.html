@@ -17,31 +17,32 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id=".init">.init</h1>
-<p>The first command that you need to run is <code>bumped init</code>. If you run it in a totally blank project, you&apos;ll see something like this:</p>
-<pre><code class="lang-bash">$ bumped init
+<p>It initializes a <code>.bumpedrdc</code> file in the path.</p>
+<p><code>bumped init</code> is a smart command that try to add common configuration files.</p>
+<p>For example, if your project have <code>package.json</code> and <code>bower.json</code> it detects and add them automagically:</p>
+<pre><code>$ bumped init
 
-warn  : It has been impossible to detect files automatically.
-warn  : Try to add manually with <span class="pl-s">&apos;add&apos;</span> command.
-warn  : There isn\<span class="pl-s">&apos;t version declared.
-success : Config file created!.
-</span></code></pre>
-<p>The magic appears when running it in a project with common package manager configuration files, for instance, like <code>package.json</code> or <code>bower.json</code>:</p>
-<pre><code class="lang-bash">$ bumped init
-
-info	: Detected <span class="pl-s">&apos;package.json&apos;</span> <span class="pl-k">in</span> the directory.
-info	: Current version is <span class="pl-s">&apos;1.0.1&apos;</span>.
-success	: Config file created!.
+bumped File package.json has been added.
+bumped File bower.json has been added.
+bumped Current version is 0.0.0.
+bumped Config file created!.
 </code></pre>
 <p>At this moment, <strong>Bumped</strong> creates a configuration file <code>.bumpedrc</code>, which is associated with the project folder. If you open this file, its content is a list made up of all the synchronized files:</p>
 <pre><code class="lang-cson">files: [
   <span class="pl-s">&quot;package.json&quot;</span>
+  <span class="pl-s">&quot;bower.json&quot;</span>
 ]
+plugins:
+  prerelease: {}
+  postrelease: {}
 </code></pre>
+<p>For synchronize the version around all the files, <strong>Bumped</strong> needs at least a one file with a <code>version</code> field. If is not possible detect a configuration file, the command will create a <code>package.json</code> with <code>version</code> field.</p>
+<p>As you can see, it also initializes plugins section.</p>
 
         </div>
         <div class="footer-nav">
           <div class="left"><a href="../index.html"><span class="title">Bumped</span></a></div>
-          <div class="right"><a href="../commands/version.html"><span class="label">Next: </span><span class="title">.version</span></a></div>
+          <div class="right"><a href="../commands/add.html"><span class="label">Next: </span><span class="title">.add</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
@@ -53,19 +54,21 @@ success	: Config file created!.
               <ul class="submenu">
                 <li class="menu-item -level-2"><a href="../commands/init.html" class="link title -active link-commandsinit">.init</a>
                 </li>
-                <li class="menu-item -level-2"><a href="../commands/version.html" class="link title  link-commandsversion">.version</a>
-                </li>
                 <li class="menu-item -level-2"><a href="../commands/add.html" class="link title  link-commandsadd">.add</a>
-                </li>
-                <li class="menu-item -level-2"><a href="../commands/release.html" class="link title  link-commandsrelease">.release</a>
                 </li>
                 <li class="menu-item -level-2"><a href="../commands/remove.html" class="link title  link-commandsremove">.remove</a>
                 </li>
+                <li class="menu-item -level-2"><a href="../commands/version.html" class="link title  link-commandsversion">.version</a>
+                </li>
                 <li class="menu-item -level-2"><a href="../commands/set.html" class="link title  link-commandsset">.set</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../commands/release.html" class="link title  link-commandsrelease">.release</a>
                 </li>
               </ul>
             </li>
             <li class="menu-item -level-1"><a href="../plugins.html" class="link title  link-plugins">Plugins</a>
+            </li>
+            <li class="menu-item -level-1"><a href="../examples.html" class="link title  link-examples">Examples</a>
             </li>
           </ul>
         </li>

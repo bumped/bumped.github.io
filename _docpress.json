@@ -34,22 +34,10 @@
             "slug": "commandsinit"
           },
           {
-            "title": ".version",
-            "source": "docs/commands/version.md",
-            "url": "commands/version.html",
-            "slug": "commandsversion"
-          },
-          {
             "title": ".add",
             "source": "docs/commands/add.md",
             "url": "commands/add.html",
             "slug": "commandsadd"
-          },
-          {
-            "title": ".release",
-            "source": "docs/commands/release.md",
-            "url": "commands/release.html",
-            "slug": "commandsrelease"
           },
           {
             "title": ".remove",
@@ -58,10 +46,39 @@
             "slug": "commandsremove"
           },
           {
+            "title": ".version",
+            "source": "docs/commands/version.md",
+            "url": "commands/version.html",
+            "slug": "commandsversion"
+          },
+          {
             "title": ".set",
             "source": "docs/commands/set.md",
             "url": "commands/set.html",
             "slug": "commandsset"
+          },
+          {
+            "title": ".release",
+            "source": "docs/commands/release.md",
+            "url": "commands/release.html",
+            "slug": "commandsrelease",
+            "headings": [
+              {
+                "title": "Semver",
+                "depth": 2,
+                "id": "semver"
+              },
+              {
+                "title": "Numerical",
+                "depth": 2,
+                "id": "numerical"
+              },
+              {
+                "title": "Nature",
+                "depth": 2,
+                "id": "nature"
+              }
+            ]
           }
         ]
       },
@@ -72,19 +89,14 @@
         "slug": "plugins",
         "headings": [
           {
-            "title": "How to use it",
+            "title": "Declaration",
             "depth": 2,
-            "id": "how-to-use-it"
+            "id": "declaration"
           },
           {
-            "title": "Running process",
+            "title": "Execution",
             "depth": 2,
-            "id": "running-process"
-          },
-          {
-            "title": "Handling Exceptions",
-            "depth": 2,
-            "id": "handling-exceptions"
+            "id": "execution"
           },
           {
             "title": "Available plugins",
@@ -97,6 +109,12 @@
             "id": "write-a-plugin!"
           }
         ]
+      },
+      {
+        "title": "Examples",
+        "source": "docs/examples.md",
+        "url": "examples.html",
+        "slug": "examples"
       }
     ]
   },
@@ -128,30 +146,47 @@
       "title": ".init",
       "slug": "commandsinit"
     },
-    "commands/version.html": {
-      "source": "docs/commands/version.md",
-      "title": ".version",
-      "slug": "commandsversion"
-    },
     "commands/add.html": {
       "source": "docs/commands/add.md",
       "title": ".add",
       "slug": "commandsadd"
-    },
-    "commands/release.html": {
-      "source": "docs/commands/release.md",
-      "title": ".release",
-      "slug": "commandsrelease"
     },
     "commands/remove.html": {
       "source": "docs/commands/remove.md",
       "title": ".remove",
       "slug": "commandsremove"
     },
+    "commands/version.html": {
+      "source": "docs/commands/version.md",
+      "title": ".version",
+      "slug": "commandsversion"
+    },
     "commands/set.html": {
       "source": "docs/commands/set.md",
       "title": ".set",
       "slug": "commandsset"
+    },
+    "commands/release.html": {
+      "source": "docs/commands/release.md",
+      "title": ".release",
+      "slug": "commandsrelease",
+      "headings": [
+        {
+          "title": "Semver",
+          "depth": 2,
+          "id": "semver"
+        },
+        {
+          "title": "Numerical",
+          "depth": 2,
+          "id": "numerical"
+        },
+        {
+          "title": "Nature",
+          "depth": 2,
+          "id": "nature"
+        }
+      ]
     },
     "plugins.html": {
       "source": "docs/plugins.md",
@@ -159,19 +194,14 @@
       "slug": "plugins",
       "headings": [
         {
-          "title": "How to use it",
+          "title": "Declaration",
           "depth": 2,
-          "id": "how-to-use-it"
+          "id": "declaration"
         },
         {
-          "title": "Running process",
+          "title": "Execution",
           "depth": 2,
-          "id": "running-process"
-        },
-        {
-          "title": "Handling Exceptions",
-          "depth": 2,
-          "id": "handling-exceptions"
+          "id": "execution"
         },
         {
           "title": "Available plugins",
@@ -184,17 +214,23 @@
           "id": "write-a-plugin!"
         }
       ]
+    },
+    "examples.html": {
+      "source": "docs/examples.md",
+      "title": "Examples",
+      "slug": "examples"
     }
   },
   "sources": {
     "README.md": "index.html",
     "docs/commands/init.md": "commands/init.html",
-    "docs/commands/version.md": "commands/version.html",
     "docs/commands/add.md": "commands/add.html",
-    "docs/commands/release.md": "commands/release.html",
     "docs/commands/remove.md": "commands/remove.html",
+    "docs/commands/version.md": "commands/version.html",
     "docs/commands/set.md": "commands/set.html",
+    "docs/commands/release.md": "commands/release.html",
     "docs/plugins.md": "plugins.html",
+    "docs/examples.md": "examples.html",
     "docs/docpress.json": "docpress.json"
   }
 }

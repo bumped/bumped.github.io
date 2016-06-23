@@ -17,13 +17,14 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id=".add">.add</h1>
+<p>It&apos;s used to add configuration file under <code>files</code> path of <code>.bumpedrc</code>.</p>
 <p>In the beginning, <strong>Bumped</strong> automatically detects common configuration files from the most popular packages managers, but you may need to add one manually.</p>
 <p>For example, I want to add a new file called <code>component.json</code> that which version setted to <code>2.0.0</code>:</p>
 <pre><code class="lang-json">{
   &quot;<span class="hljs-attr">version</span>&quot;: <span class="pl-s">&quot;2.0.0&quot;</span>
 }
 </code></pre>
-<p>I can be done typing <code>bumped add</code>:</p>
+<p>I can be done using <code>bumped add</code>:</p>
 <pre><code class="lang-bash">$ bumped add component.json
 
 info    : Detected <span class="pl-s">&apos;component.json&apos;</span> <span class="pl-k">in</span> the directory.
@@ -44,8 +45,8 @@ info	: Current version is <span class="pl-s">&apos;2.0.0&apos;</span>.
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../commands/version.html"><span class="title">.version</span></a></div>
-          <div class="right"><a href="../commands/release.html"><span class="label">Next: </span><span class="title">.release</span></a></div>
+          <div class="left"><a href="../commands/init.html"><span class="title">.init</span></a></div>
+          <div class="right"><a href="../commands/remove.html"><span class="label">Next: </span><span class="title">.remove</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
@@ -57,19 +58,21 @@ info	: Current version is <span class="pl-s">&apos;2.0.0&apos;</span>.
               <ul class="submenu">
                 <li class="menu-item -level-2"><a href="../commands/init.html" class="link title  link-commandsinit">.init</a>
                 </li>
-                <li class="menu-item -level-2"><a href="../commands/version.html" class="link title  link-commandsversion">.version</a>
-                </li>
                 <li class="menu-item -level-2"><a href="../commands/add.html" class="link title -active link-commandsadd">.add</a>
-                </li>
-                <li class="menu-item -level-2"><a href="../commands/release.html" class="link title  link-commandsrelease">.release</a>
                 </li>
                 <li class="menu-item -level-2"><a href="../commands/remove.html" class="link title  link-commandsremove">.remove</a>
                 </li>
+                <li class="menu-item -level-2"><a href="../commands/version.html" class="link title  link-commandsversion">.version</a>
+                </li>
                 <li class="menu-item -level-2"><a href="../commands/set.html" class="link title  link-commandsset">.set</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../commands/release.html" class="link title  link-commandsrelease">.release</a>
                 </li>
               </ul>
             </li>
             <li class="menu-item -level-1"><a href="../plugins.html" class="link title  link-plugins">Plugins</a>
+            </li>
+            <li class="menu-item -level-1"><a href="../examples.html" class="link title  link-examples">Examples</a>
             </li>
           </ul>
         </li>

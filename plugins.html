@@ -17,21 +17,31 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="plugins">Plugins</h1>
-<p>They define the way you connect your releases steps with third party software.</p>
-<h2 id="how-to-use-it">How to use it</h2>
-<p>Basically a plugin is a fa&#xE7;ade around a third party software to make easy the connection between your project and the third party software.</p>
-<p>Plugins are declared in the <code>plugins</code> section of your <code>.bumpedrc</code>.</p>
+<p>They are actions that will be executed every time that you release a new version of your project.</p>
+<h2 id="declaration">Declaration</h2>
+<p>When you declare a plugin under the <code>plugins</code> path at your <code>.bumpedrc</code>, you are creating a step to be executed before or after you release a new version.</p>
+<p>Plugins can be used as <code>prereleases</code> and <code>postrelease</code> steps interchangeably: You can put it in the step that you need it.</p>
+<p>In all the cases, the plugin declaration is formed by the description message of the step and the plugin that you want to use.</p>
 <pre><code class="lang-YAML"><span class="hljs-attr">plugins:</span>
 <span class="hljs-attr">  prerelease:</span>
     <span class="pl-s">&apos;Say hello&apos;</span>:
 <span class="hljs-attr">      plugin:</span> <span class="pl-s">&apos;bumped-terminal&apos;</span>
 <span class="hljs-attr">      command:</span> <span class="pl-s">&apos;echo Hello my friend!&apos;</span>
 </code></pre>
-<p>First of all, plugins are used as <code>prereleases</code> and <code>postrelease</code> interchangeably. So, you can put the plugin where you need.</p>
-<p>Second, the plugin declaration is formed by the description message of the step and the plugin that you want to use.</p>
 <p>The rest of information, (in this example, <code>command</code>) depends of the specific plugin used.</p>
-<h2 id="running-process">Running process</h2>
-<h2 id="handling-exceptions">Handling Exceptions</h2>
+<h2 id="execution">Execution</h2>
+<p>Every time that you release a new version, plugins will be executed.</p>
+<p>Also, As you can imagine, the workflow will be:</p>
+<ul>
+<li>Execute <code>prerelease</code> plugins.</li>
+<li>Increment the current version.</li>
+<li>Execute <code>postrelease</code> plugins.</li>
+</ul>
+<p>Plugins are executed on series. Under the words, this means:</p>
+<ul>
+<li>Order is important (or not): first plugin declared will be first plugin to be executed.</li>
+<li>If a plugin have a unexepected exit, it stop the pipeline and the release process.</li>
+</ul>
 <h2 id="available-plugins">Available plugins</h2>
 <table>
 <thead>
@@ -64,7 +74,8 @@
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="commands/set.html"><span class="title">.set</span></a></div>
+          <div class="left"><a href="commands/release.html"><span class="title">.release</span></a></div>
+          <div class="right"><a href="examples.html"><span class="label">Next: </span><span class="title">Examples</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
@@ -76,31 +87,31 @@
               <ul class="submenu">
                 <li class="menu-item -level-2"><a href="commands/init.html" class="link title  link-commandsinit">.init</a>
                 </li>
-                <li class="menu-item -level-2"><a href="commands/version.html" class="link title  link-commandsversion">.version</a>
-                </li>
                 <li class="menu-item -level-2"><a href="commands/add.html" class="link title  link-commandsadd">.add</a>
-                </li>
-                <li class="menu-item -level-2"><a href="commands/release.html" class="link title  link-commandsrelease">.release</a>
                 </li>
                 <li class="menu-item -level-2"><a href="commands/remove.html" class="link title  link-commandsremove">.remove</a>
                 </li>
+                <li class="menu-item -level-2"><a href="commands/version.html" class="link title  link-commandsversion">.version</a>
+                </li>
                 <li class="menu-item -level-2"><a href="commands/set.html" class="link title  link-commandsset">.set</a>
+                </li>
+                <li class="menu-item -level-2"><a href="commands/release.html" class="link title  link-commandsrelease">.release</a>
                 </li>
               </ul>
             </li>
             <li class="menu-item -level-1"><a href="plugins.html" class="link title -active link-plugins">Plugins</a>
               <ul class="headings heading-list">
-                <li class="heading-item -depth-2"><a href="#how-to-use-it" class="hlink link-how-to-use-it">How to use it</a>
+                <li class="heading-item -depth-2"><a href="#declaration" class="hlink link-declaration">Declaration</a>
                 </li>
-                <li class="heading-item -depth-2"><a href="#running-process" class="hlink link-running-process">Running process</a>
-                </li>
-                <li class="heading-item -depth-2"><a href="#handling-exceptions" class="hlink link-handling-exceptions">Handling Exceptions</a>
+                <li class="heading-item -depth-2"><a href="#execution" class="hlink link-execution">Execution</a>
                 </li>
                 <li class="heading-item -depth-2"><a href="#available-plugins" class="hlink link-available-plugins">Available plugins</a>
                 </li>
                 <li class="heading-item -depth-2"><a href="#write-a-plugin!" class="hlink link-write-a-plugin!">Write a plugin!</a>
                 </li>
               </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="examples.html" class="link title  link-examples">Examples</a>
             </li>
           </ul>
         </li>
