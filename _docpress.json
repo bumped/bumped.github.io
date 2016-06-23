@@ -69,7 +69,34 @@
         "title": "Plugins",
         "source": "docs/plugins.md",
         "url": "plugins.html",
-        "slug": "plugins"
+        "slug": "plugins",
+        "headings": [
+          {
+            "title": "How to use it",
+            "depth": 2,
+            "id": "how-to-use-it"
+          },
+          {
+            "title": "Running process",
+            "depth": 2,
+            "id": "running-process"
+          },
+          {
+            "title": "Handling Exceptions",
+            "depth": 2,
+            "id": "handling-exceptions"
+          },
+          {
+            "title": "Available plugins",
+            "depth": 2,
+            "id": "available-plugins"
+          },
+          {
+            "title": "Write a plugin!",
+            "depth": 2,
+            "id": "write-a-plugin!"
+          }
+        ]
       }
     ]
   },
@@ -129,7 +156,34 @@
     "plugins.html": {
       "source": "docs/plugins.md",
       "title": "Plugins",
-      "slug": "plugins"
+      "slug": "plugins",
+      "headings": [
+        {
+          "title": "How to use it",
+          "depth": 2,
+          "id": "how-to-use-it"
+        },
+        {
+          "title": "Running process",
+          "depth": 2,
+          "id": "running-process"
+        },
+        {
+          "title": "Handling Exceptions",
+          "depth": 2,
+          "id": "handling-exceptions"
+        },
+        {
+          "title": "Available plugins",
+          "depth": 2,
+          "id": "available-plugins"
+        },
+        {
+          "title": "Write a plugin!",
+          "depth": 2,
+          "id": "write-a-plugin!"
+        }
+      ]
     }
   },
   "sources": {

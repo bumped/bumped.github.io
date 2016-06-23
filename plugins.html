@@ -17,13 +17,50 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="plugins">Plugins</h1>
-<p>Plugins system is the glorious part of Bumped. With them you can integrate the command in your workflow without effort.</p>
-<ul>
-<li><a href="https://github.com/bumped/bumped-terminal">bumped-terminal</a> &#x2013; Executes whatever terminal command.</li>
-<li><a href="https://github.com/bumped/bumped-changelog">bumped-changelog</a> &#x2013; Auto generates a changelog file in each bump.</li>
-<li><a href="https://github.com/bumped/bumped-finepack">bumped-finepack</a> &#x2013; Lints your JSON Config files and keep them readables.</li>
-<li><a href="https://github.com/bumped/bumped-http">bumped-http</a> &#x2013; Expose an HTTP Client to interact with API&apos;s endpoints.</li>
-</ul>
+<p>They define the way you connect your releases steps with third party software.</p>
+<h2 id="how-to-use-it">How to use it</h2>
+<p>Basically a plugin is a fa&#xE7;ade around a third party software to make easy the connection between your project and the third party software.</p>
+<p>Plugins are declared in the <code>plugins</code> section of your <code>.bumpedrc</code>.</p>
+<pre><code class="lang-YAML"><span class="hljs-attr">plugins:</span>
+<span class="hljs-attr">  prerelease:</span>
+    <span class="pl-s">&apos;Say hello&apos;</span>:
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">&apos;bumped-terminal&apos;</span>
+<span class="hljs-attr">      command:</span> <span class="pl-s">&apos;echo Hello my friend!&apos;</span>
+</code></pre>
+<p>First of all, plugins are used as <code>prereleases</code> and <code>postrelease</code> interchangeably. So, you can put the plugin where you need.</p>
+<p>Second, the plugin declaration is formed by the description message of the step and the plugin that you want to use.</p>
+<p>The rest of information, (in this example, <code>command</code>) depends of the specific plugin used.</p>
+<h2 id="running-process">Running process</h2>
+<h2 id="handling-exceptions">Handling Exceptions</h2>
+<h2 id="available-plugins">Available plugins</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/bumped/bumped-terminal">bumped-terminal</a></td>
+<td>Executes whatever terminal command.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bumped/bumped-changelog">bumped-changelog</a></td>
+<td>Auto generates a changelog file in each bump.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bumped/bumped-finepack">bumped-finepack</a></td>
+<td>Lints your JSON Config files and keep them readables.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bumped/bumped-http">bumped-http</a></td>
+<td>Expose an HTTP Client to interact with API&apos;s endpoints.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="write-a-plugin!">Write a plugin!</h2>
+<p><em>SOON</em></p>
 
         </div>
         <div class="footer-nav">
@@ -52,6 +89,18 @@
               </ul>
             </li>
             <li class="menu-item -level-1"><a href="plugins.html" class="link title -active link-plugins">Plugins</a>
+              <ul class="headings heading-list">
+                <li class="heading-item -depth-2"><a href="#how-to-use-it" class="hlink link-how-to-use-it">How to use it</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#running-process" class="hlink link-running-process">Running process</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#handling-exceptions" class="hlink link-handling-exceptions">Handling Exceptions</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#available-plugins" class="hlink link-available-plugins">Available plugins</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#write-a-plugin!" class="hlink link-write-a-plugin!">Write a plugin!</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
