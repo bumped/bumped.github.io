@@ -251,6 +251,7 @@
     "index.html": {
       "source": "README.md",
       "title": "Bumped",
+      "pageTitle": "Bumped",
       "slug": "index",
       "headings": [
         {
@@ -272,32 +273,38 @@
     },
     "commands/init.html": {
       "source": "docs/commands/init.md",
-      "title": ".init",
+      "title": ".init - Bumped",
+      "pageTitle": ".init",
       "slug": "commandsinit"
     },
     "commands/add.html": {
       "source": "docs/commands/add.md",
-      "title": ".add",
+      "title": ".add - Bumped",
+      "pageTitle": ".add",
       "slug": "commandsadd"
     },
     "commands/remove.html": {
       "source": "docs/commands/remove.md",
-      "title": ".remove",
+      "title": ".remove - Bumped",
+      "pageTitle": ".remove",
       "slug": "commandsremove"
     },
     "commands/version.html": {
       "source": "docs/commands/version.md",
-      "title": ".version",
+      "title": ".version - Bumped",
+      "pageTitle": ".version",
       "slug": "commandsversion"
     },
     "commands/set.html": {
       "source": "docs/commands/set.md",
-      "title": ".set",
+      "title": ".set - Bumped",
+      "pageTitle": ".set",
       "slug": "commandsset"
     },
     "commands/release.html": {
       "source": "docs/commands/release.md",
-      "title": ".release",
+      "title": ".release - Bumped",
+      "pageTitle": ".release",
       "slug": "commandsrelease",
       "headings": [
         {
@@ -319,7 +326,8 @@
     },
     "plugins.html": {
       "source": "docs/plugins.md",
-      "title": "Plugins",
+      "title": "Plugins - Bumped",
+      "pageTitle": "Plugins",
       "slug": "plugins",
       "headings": [
         {
@@ -346,12 +354,14 @@
     },
     "examples.html": {
       "source": "docs/examples.md",
-      "title": "Examples",
+      "title": "Examples - Bumped",
+      "pageTitle": "Examples",
       "slug": "examples"
     },
     "CHANGELOG.html": {
       "source": "CHANGELOG.md",
-      "title": "Changelog",
+      "title": "Changelog - Bumped",
+      "pageTitle": "Changelog",
       "slug": "changelog",
       "headings": [
         {
