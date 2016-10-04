@@ -57,17 +57,57 @@ bumped File bower.json has been added.
 bumped Current version is 0.0.0.
 bumped Config file created!.
 </code></pre>
-<p>At this moment, <strong>Bumped</strong> creates a configuration file <code>.bumpedrc</code>, which is associated with the project folder. If you open this file, its content is a list made up of all the synchronized files:</p>
-<pre><code class="lang-cson">files: [
-  <span class="pl-s">&quot;package.json&quot;</span>
-  <span class="pl-s">&quot;bower.json&quot;</span>
-]
-plugins:
-  prerelease: {}
-  postrelease: {}
+<p>At this moment, <strong>Bumped</strong> creates a configuration file <code>.bumpedrc</code>, which is associated with the project folder.</p>
+<p>If you open this file, its content is a list made up of all the synchronized files:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">files:</span>
+
+<span class="hljs-bullet">-</span> package.json
+
+<span class="hljs-attr">plugins:</span>
+
+<span class="hljs-attr">  prerelease:</span>
+
+    Linting config files:
+<span class="hljs-attr">      plugin:</span> bumped-finepack
+
+<span class="hljs-attr">  postrelease:</span>
+
+    Generating CHANGELOG file:
+<span class="hljs-attr">      plugin:</span> bumped-changelog
+
+    Commiting new version:
+<span class="hljs-attr">      plugin:</span> bumped-terminal
+<span class="hljs-attr">      command:</span> git add CHANGELOG.md package.json &amp;&amp; git commit -m <span class="pl-s">&quot;Release $newVersion&quot;</span>
+
+    Detecting problems before publish:
+<span class="hljs-attr">      plugin:</span> bumped-terminal
+<span class="hljs-attr">      command:</span> git-dirty &amp;&amp; npm test
+
+    Publishing tag at Github:
+<span class="hljs-attr">      plugin:</span> bumped-terminal
+<span class="hljs-attr">      command:</span> git tag $newVersion &amp;&amp; git push &amp;&amp; git push --tags
+
+    Publishing at NPM:
+<span class="hljs-attr">      plugin:</span> bumped-terminal
+<span class="hljs-attr">      command:</span> npm publish
 </code></pre>
-<p>For synchronizing the version around all the files, <strong>Bumped</strong> needs at least a one file with a <code>version</code> field. If it cannot detect a configuration file, the command will create a <code>package.json</code> with a <code>version</code> field.</p>
-<p>As you can see, it also initializes the plugins section.</p>
+<blockquote>
+<p><strong>NOTE</strong>: The file is generated in YAML format, but currently it supports JSON or CSON as well.</p>
+</blockquote>
+<p>The file generated is divided in two sections:</p>
+<h4 id="files">Files</h4>
+<p>type: <code>Array</code></p>
+<p><strong>Bumped</strong> needs at least a one file with a <code>version</code> field for synchronizing the version around all the files.</p>
+<p>If it cannot detect a configuration file, the command will create a <code>package.json</code> with a <code>version</code> field.</p>
+<h4 id="plugins">Plugins</h4>
+<p>type: <code>Object</code></p>
+<p>It contents the <code>prerelease</code> and <code>postrelease</code> tasks to perform every time that you release a new version using <strong>Bumped</strong>.</p>
+<p>As you can see, the definition of a task is composed by:</p>
+<ul>
+<li>The description of the task.</li>
+<li>The plugin to use for perform the task.</li>
+<li>The API of the task for connect with your code.</li>
+</ul>
 
         </div>
         <div class="footer-nav">

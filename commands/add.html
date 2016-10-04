@@ -61,17 +61,16 @@ info    : Detected <span class="pl-s">&apos;component.json&apos;</span> <span cl
 success	: <span class="pl-s">&apos;component.json&apos;</span> has been added.
 </code></pre>
 <p>If you check now the <code>.bumpedrc</code> file, the list of configuration files has been updated:</p>
-<pre><code class="lang-cson">files: [
-  <span class="pl-s">&quot;package.json&quot;</span>
-  <span class="pl-s">&quot;component.json&quot;</span>
-]
+<pre><code class="lang-yaml"><span class="hljs-attr">files:</span>
+<span class="hljs-bullet">  -</span> package.json
+<span class="hljs-bullet">  -</span> component.json
 </code></pre>
 <p>If you type now <code>bumped version</code>, you can check that the shared version has changed:</p>
 <pre><code class="lang-bash">$ bumped version
 
 info	: Current version is <span class="pl-s">&apos;2.0.0&apos;</span>.
 </code></pre>
-<p>The version is setted to 2.0.0 because it&apos;s the major version between all the configuration files.</p>
+<p>The version is set to <code>2.0.0</code> because it&apos;s the major version between all the configuration files.</p>
 
         </div>
         <div class="footer-nav">
