@@ -123,6 +123,18 @@
         "slug": "changelog",
         "headings": [
           {
+            "title": "0.10.3 (2016-11-25)",
+            "depth": 2,
+            "id": "0.10.3-(2016-11-25)",
+            "headings": [
+              {
+                "title": "BREAKING CHANGE",
+                "depth": 3,
+                "id": "breaking-change"
+              }
+            ]
+          },
+          {
             "title": "0.10.2 (2016-10-24)",
             "depth": 2,
             "id": "0.10.2-(2016-10-24)"
@@ -374,6 +386,18 @@
       "pageTitle": "Changelog",
       "slug": "changelog",
       "headings": [
+        {
+          "title": "0.10.3 (2016-11-25)",
+          "depth": 2,
+          "id": "0.10.3-(2016-11-25)",
+          "headings": [
+            {
+              "title": "BREAKING CHANGE",
+              "depth": 3,
+              "id": "breaking-change"
+            }
+          ]
+        },
         {
           "title": "0.10.2 (2016-10-24)",
           "depth": 2,
