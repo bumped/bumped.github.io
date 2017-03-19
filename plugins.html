@@ -114,7 +114,30 @@
 </tbody>
 </table>
 <h2 id="write-a-plugin!">Write a plugin!</h2>
-<p><em>SOON</em></p>
+<p>A plugin is a simple interface for connect thid party software with bumped workflow.</p>
+<p>First need to define the API for your plugin, for example:</p>
+<pre><code class="lang-yaml">Say Hello:
+<span class="hljs-attr">  plugin:</span> bumped-echo
+ &#xA0;message: <span class="pl-s">&apos;hello world&apos;</span>
+</code></pre>
+<p>Here we are defining <code>bumped-echo</code> plugin that output a <code>message</code>.</p>
+<p>Now, write the necessary code for do the task:</p>
+<pre><code class="lang-js"><span class="pl-c">/**
+ * bumped-echo, print a message in your temrinal
+ * @param  {Object}   bumped
+ * @param  {Object}   plugin        
+ * @param  {Object}   plugin.opts   
+ * @param  {Object}   plugin.title  
+ * @param  {Object}   plugin.logger
+ * @param  {Object}   plugin.path
+ * @param  {Function} cb
+ */</span>
+<span class="pl-c1">module</span>.exports = <span class="hljs-function"><span class="pl-k">function</span>(<span class="hljs-params">bumped, plugin, cb</span>) </span>{
+  <span class="pl-k">const</span> {message} = plugin
+  <span class="pl-c1">console</span>.log(message)
+  cb()
+}
+</code></pre>
 
         </div>
         <div class="footer-nav">
