@@ -133,7 +133,7 @@
  * @param  {Function} cb
  */</span>
 <span class="pl-c1">module</span>.exports = <span class="hljs-function"><span class="pl-k">function</span>(<span class="hljs-params">bumped, plugin, cb</span>) </span>{
-  <span class="pl-k">const</span> {message} = plugin
+  <span class="pl-k">const</span> {message} = plugin.opts
   <span class="pl-c1">console</span>.log(message)
   cb()
 }
