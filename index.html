@@ -82,8 +82,8 @@
 <p>For example, a typical <code>.bumpedrc</code> file will have:</p>
 <ul>
 <li>Before increment the project version, do a set of actions related to the integrity of the project: Run tests, lint files, check for unstaged changes, etc.</li>
-<li>Increment the project version in all necessary files, for example, in <code>package.json</code> and <code>bower.json</code>.</li>
-<li>After that, do actions mostly related with the publishing process: Publish a new git tag on GitHub, publish new bower/NPM project version.</li>
+<li>Increment the project version in all necessary files, for example, in <code>package.json</code>.</li>
+<li>After that, do actions mostly related with the publishing process: Publish a new git tag on GitHub, publish new NPM project version.</li>
 </ul>
 <p>Now, next time you run <code>bumped release &lt;major|minor|patch&gt;</code> it performs all the release steps.</p>
 <p align="center">
@@ -96,7 +96,7 @@
 <li>Easy to integrate it with both with your current and new projects.</li>
 <li>Provides a plugin system for associate action before and after releasing your software.</li>
 </ul>
-<p><strong>Bumped</strong> synchronizes your software version across different package manager configuration files (npm, bower,...) and controls, edits and releases each of its versions to ensure all the files have the same version.</p>
+<p><strong>Bumped</strong> synchronizes your software version across different package manager configuration files and controls, edits and releases each of its versions to ensure all the files have the same version.</p>
 <p>Because writing software is hard enough, we must make the publishing process of software simple and effective.</p>
 <p>Consider read this excellent list of articles to expand your vision about the releasing process:</p>
 <ul>
