@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
-    <script src="../assets/script.js?t=42463e55"></script>
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
     <title>.set - Bumped</title>
     <meta name="viewport" content="width=device-width">
   </head>
@@ -11,34 +11,36 @@
     <div class="doc-layout">
       <div class="toggle menu-toggle js-menu-toggle"></div>
       <div class="menu toc-menu">
-        <li class="menu-item -level-0 -parent">
-          <ul class="submenu">
-            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Bumped</a>
-            </li>
-            <li class="menu-item -level-1 -parent"><span class="title">Commands</span>
-              <ul class="submenu">
-                <li class="menu-item -level-2"><a class="link title  link-commandsinit" href="../commands/init.html">.init</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsadd" href="../commands/add.html">.add</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsremove" href="../commands/remove.html">.remove</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsversion" href="../commands/version.html">.version</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title -active link-commandsset" href="../commands/set.html">.set</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsrelease" href="../commands/release.html">.release</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-plugins" href="../plugins.html">Plugins</a>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-examples" href="../examples.html">Examples</a>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-changelog" href="../CHANGELOG.html">Changelog</a>
-            </li>
-          </ul>
-        </li>
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Bumped</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Commands</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-commandsinit" href="../commands/init.html">.init</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsadd" href="../commands/add.html">.add</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsremove" href="../commands/remove.html">.remove</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsversion" href="../commands/version.html">.version</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title -active link-commandsset" href="../commands/set.html">.set</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsrelease" href="../commands/release.html">.release</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-plugins" href="../plugins.html">Plugins</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-examples" href="../examples.html">Examples</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-changelog" href="../CHANGELOG.html">Changelog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="body page-commandsset">
         <div class="header-nav">
@@ -51,17 +53,17 @@
 <p>Sometimes you need to update a determinate property in the configuration files. No more edit files manually!</p>
 <pre><code class="lang-bash">$ bumped <span class="pl-c1">set</span> name simple-average
 
-success : Property <span class="pl-s">&apos;name&apos;</span> set.
+success : Property <span class="pl-s">&apos;name&apos;</span> <span class="pl-c1">set</span>.
 </code></pre>
 <p>In this case, <code>name</code> is a plain property in the JSON, but you can update nested object properties as well providing the object path:</p>
 <pre><code class="lang-bash">$ bumped <span class="pl-c1">set</span> author.name Kiko Beats
 
-success : Property <span class="pl-s">&apos;author.name&apos;</span> set.
+success : Property <span class="pl-s">&apos;author.name&apos;</span> <span class="pl-c1">set</span>.
 </code></pre>
 <p>or Arrays values:</p>
 <pre><code class="lang-bash">$ bumped <span class="pl-c1">set</span> keywords <span class="pl-s">&quot;[average, avg]&quot;</span>
 
-success	: Property <span class="pl-s">&apos;keywords&apos;</span> set.
+success	: Property <span class="pl-s">&apos;keywords&apos;</span> <span class="pl-c1">set</span>.
 </code></pre>
 
         </div>

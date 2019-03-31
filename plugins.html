@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/style.css?t=615badd5">
-    <script src="assets/script.js?t=42463e55"></script>
+    <link rel="stylesheet" href="assets/style.css?t=90051322">
+    <script src="assets/script.js?t=93f1a66c"></script>
     <title>Plugins - Bumped</title>
     <meta name="viewport" content="width=device-width">
   </head>
@@ -11,44 +11,46 @@
     <div class="doc-layout">
       <div class="toggle menu-toggle js-menu-toggle"></div>
       <div class="menu toc-menu">
-        <li class="menu-item -level-0 -parent">
-          <ul class="submenu">
-            <li class="menu-item -level-1"><a class="link title  link-index" href="index.html">Bumped</a>
-            </li>
-            <li class="menu-item -level-1 -parent"><span class="title">Commands</span>
-              <ul class="submenu">
-                <li class="menu-item -level-2"><a class="link title  link-commandsinit" href="commands/init.html">.init</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsadd" href="commands/add.html">.add</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsremove" href="commands/remove.html">.remove</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsversion" href="commands/version.html">.version</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsset" href="commands/set.html">.set</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsrelease" href="commands/release.html">.release</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item -level-1"><a class="link title -active link-plugins" href="plugins.html">Plugins</a>
-              <ul class="headings heading-list">
-                <li class="heading-item -depth-2"><a class="hlink link-declaration" href="#declaration">Declaration</a>
-                </li>
-                <li class="heading-item -depth-2"><a class="hlink link-execution" href="#execution">Execution</a>
-                </li>
-                <li class="heading-item -depth-2"><a class="hlink link-available-plugins" href="#available-plugins">Available plugins</a>
-                </li>
-                <li class="heading-item -depth-2"><a class="hlink link-write-a-plugin!" href="#write-a-plugin!">Write a plugin!</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-examples" href="examples.html">Examples</a>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-changelog" href="CHANGELOG.html">Changelog</a>
-            </li>
-          </ul>
-        </li>
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="index.html">Bumped</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Commands</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-commandsinit" href="commands/init.html">.init</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsadd" href="commands/add.html">.add</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsremove" href="commands/remove.html">.remove</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsversion" href="commands/version.html">.version</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsset" href="commands/set.html">.set</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsrelease" href="commands/release.html">.release</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title -active link-plugins" href="plugins.html">Plugins</a>
+                <ul class="headings heading-list">
+                  <li class="heading-item -depth-2"><a class="hlink link-declaration" href="#declaration">Declaration</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-execution" href="#execution">Execution</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-available-plugins" href="#available-plugins">Available plugins</a>
+                  </li>
+                  <li class="heading-item -depth-2"><a class="hlink link-write-a-plugin!" href="#write-a-plugin!">Write a plugin!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-examples" href="examples.html">Examples</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-changelog" href="CHANGELOG.html">Changelog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="body page-plugins">
         <div class="header-nav">
@@ -64,9 +66,9 @@
 <p>In all the cases, the plugin declaration is formed by the description message of the step and the plugin that you want to use.</p>
 <pre><code class="lang-YAML"><span class="hljs-attr">plugins:</span>
 <span class="hljs-attr">  prerelease:</span>
-    Say hello:
-<span class="hljs-attr">      plugin:</span> bumped-terminal
-<span class="hljs-attr">      command:</span> echo Hello my friend!
+    <span class="pl-s">Say</span> <span class="hljs-attr">hello:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
+<span class="hljs-attr">      command:</span> <span class="pl-s">echo</span> <span class="pl-s">Hello</span> <span class="pl-s">my</span> <span class="pl-s">friend!</span>
 </code></pre>
 <p>The rest of information, (in this example, <code>command</code>) depends of the specific plugin used.</p>
 <h2 id="execution">Execution</h2>
@@ -116,9 +118,9 @@
 <h2 id="write-a-plugin!">Write a plugin!</h2>
 <p>A plugin is a simple interface for connect thid party software with bumped workflow.</p>
 <p>First need to define the API for your plugin, for example:</p>
-<pre><code class="lang-yaml">Say Hello:
-<span class="hljs-attr">  plugin:</span> bumped-echo
- &#xA0;message: <span class="pl-s">&apos;hello world&apos;</span>
+<pre><code class="lang-yaml"><span class="pl-s">Say</span> <span class="hljs-attr">Hello:</span>
+<span class="hljs-attr">  plugin:</span> <span class="pl-s">bumped-echo</span>
+ &#xA0;<span class="hljs-attr">message:</span> <span class="pl-s">&apos;hello world&apos;</span>
 </code></pre>
 <p>Here we are defining <code>bumped-echo</code> plugin that output a <code>message</code>.</p>
 <p>Now, write the necessary code for do the task:</p>

@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
-    <script src="../assets/script.js?t=42463e55"></script>
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
     <title>.init - Bumped</title>
     <meta name="viewport" content="width=device-width">
   </head>
@@ -11,34 +11,36 @@
     <div class="doc-layout">
       <div class="toggle menu-toggle js-menu-toggle"></div>
       <div class="menu toc-menu">
-        <li class="menu-item -level-0 -parent">
-          <ul class="submenu">
-            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Bumped</a>
-            </li>
-            <li class="menu-item -level-1 -parent"><span class="title">Commands</span>
-              <ul class="submenu">
-                <li class="menu-item -level-2"><a class="link title -active link-commandsinit" href="../commands/init.html">.init</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsadd" href="../commands/add.html">.add</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsremove" href="../commands/remove.html">.remove</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsversion" href="../commands/version.html">.version</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsset" href="../commands/set.html">.set</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-commandsrelease" href="../commands/release.html">.release</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-plugins" href="../plugins.html">Plugins</a>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-examples" href="../examples.html">Examples</a>
-            </li>
-            <li class="menu-item -level-1"><a class="link title  link-changelog" href="../CHANGELOG.html">Changelog</a>
-            </li>
-          </ul>
-        </li>
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Bumped</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Commands</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title -active link-commandsinit" href="../commands/init.html">.init</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsadd" href="../commands/add.html">.add</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsremove" href="../commands/remove.html">.remove</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsversion" href="../commands/version.html">.version</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsset" href="../commands/set.html">.set</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-commandsrelease" href="../commands/release.html">.release</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-plugins" href="../plugins.html">Plugins</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-examples" href="../examples.html">Examples</a>
+              </li>
+              <li class="menu-item -level-1"><a class="link title  link-changelog" href="../CHANGELOG.html">Changelog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="body page-commandsinit">
         <div class="header-nav">
@@ -60,35 +62,35 @@ bumped Config file created!.
 <p>If you open this file, its content is a list made up of all the synchronized files:</p>
 <pre><code class="lang-yaml"><span class="hljs-attr">files:</span>
 
-<span class="hljs-bullet">-</span> package.json
+<span class="hljs-bullet">-</span> <span class="pl-s">package.json</span>
 
 <span class="hljs-attr">plugins:</span>
 
 <span class="hljs-attr">  prerelease:</span>
 
-    Linting config files:
-<span class="hljs-attr">      plugin:</span> bumped-finepack
+    <span class="pl-s">Linting</span> <span class="pl-s">config</span> <span class="hljs-attr">files:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-finepack</span>
 
 <span class="hljs-attr">  postrelease:</span>
 
-    Generating CHANGELOG file:
-<span class="hljs-attr">      plugin:</span> bumped-changelog
+    <span class="pl-s">Generating</span> <span class="pl-s">CHANGELOG</span> <span class="hljs-attr">file:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-changelog</span>
 
-    Committing new version:
-<span class="hljs-attr">      plugin:</span> bumped-terminal
-<span class="hljs-attr">      command:</span> git add CHANGELOG.md package.json &amp;&amp; git commit -m <span class="pl-s">&quot;Release $newVersion&quot;</span>
+    <span class="pl-s">Committing</span> <span class="pl-s">new</span> <span class="hljs-attr">version:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
+<span class="hljs-attr">      command:</span> <span class="pl-s">git</span> <span class="pl-s">add</span> <span class="pl-s">CHANGELOG.md</span> <span class="pl-s">package.json</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">commit</span> <span class="hljs-bullet">-m</span> <span class="pl-s">&quot;Release $newVersion&quot;</span>
 
-    Detecting problems before publish:
-<span class="hljs-attr">      plugin:</span> bumped-terminal
-<span class="hljs-attr">      command:</span> git-dirty &amp;&amp; npm test
+    <span class="pl-s">Detecting</span> <span class="pl-s">problems</span> <span class="pl-s">before</span> <span class="hljs-attr">publish:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
+<span class="hljs-attr">      command:</span> <span class="pl-s">git-dirty</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">npm</span> <span class="pl-s">test</span>
 
-    Publishing tag at Github:
-<span class="hljs-attr">      plugin:</span> bumped-terminal
-<span class="hljs-attr">      command:</span> git tag $newVersion &amp;&amp; git push &amp;&amp; git push --tags
+    <span class="pl-s">Publishing</span> <span class="pl-s">tag</span> <span class="pl-s">at</span> <span class="hljs-attr">Github:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
+<span class="hljs-attr">      command:</span> <span class="pl-s">git</span> <span class="pl-s">tag</span> <span class="pl-s">$newVersion</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">push</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">push</span> <span class="hljs-bullet">--tags</span>
 
-    Publishing at NPM:
-<span class="hljs-attr">      plugin:</span> bumped-terminal
-<span class="hljs-attr">      command:</span> npm publish
+    <span class="pl-s">Publishing</span> <span class="pl-s">at</span> <span class="hljs-attr">NPM:</span>
+<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
+<span class="hljs-attr">      command:</span> <span class="pl-s">npm</span> <span class="pl-s">publish</span>
 </code></pre>
 <blockquote>
 <p><strong>NOTE</strong>: The file is generated in YAML format, but currently it supports JSON or CSON as well.</p>
