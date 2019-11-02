@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/style.css?t=90051322">
@@ -65,10 +65,10 @@
 <p>Plugins can be used as <code>prereleases</code> and <code>postrelease</code> steps interchangeably: You can put it in the step that you need it.</p>
 <p>In all the cases, the plugin declaration is formed by the description message of the step and the plugin that you want to use.</p>
 <pre><code class="lang-YAML"><span class="hljs-attr">plugins:</span>
-<span class="hljs-attr">  prerelease:</span>
-    <span class="pl-s">Say</span> <span class="hljs-attr">hello:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
-<span class="hljs-attr">      command:</span> <span class="pl-s">echo</span> <span class="pl-s">Hello</span> <span class="pl-s">my</span> <span class="pl-s">friend!</span>
+  <span class="hljs-attr">prerelease:</span>
+    <span class="hljs-attr">Say hello:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-terminal</span>
+      <span class="hljs-attr">command:</span> <span class="pl-s">echo</span> <span class="pl-s">Hello</span> <span class="pl-s">my</span> <span class="pl-s">friend!</span>
 </code></pre>
 <p>The rest of information, (in this example, <code>command</code>) depends of the specific plugin used.</p>
 <h2 id="execution">Execution</h2>
@@ -118,8 +118,8 @@
 <h2 id="write-a-plugin!">Write a plugin!</h2>
 <p>A plugin is a simple interface for connect thid party software with bumped workflow.</p>
 <p>First need to define the API for your plugin, for example:</p>
-<pre><code class="lang-yaml"><span class="pl-s">Say</span> <span class="hljs-attr">Hello:</span>
-<span class="hljs-attr">  plugin:</span> <span class="pl-s">bumped-echo</span>
+<pre><code class="lang-yaml"><span class="hljs-attr">Say Hello:</span>
+  <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-echo</span>
  &#xA0;<span class="hljs-attr">message:</span> <span class="pl-s">&apos;hello world&apos;</span>
 </code></pre>
 <p>Here we are defining <code>bumped-echo</code> plugin that output a <code>message</code>.</p>

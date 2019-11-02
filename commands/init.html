@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/style.css?t=90051322">
@@ -66,31 +66,31 @@ bumped Config file created!.
 
 <span class="hljs-attr">plugins:</span>
 
-<span class="hljs-attr">  prerelease:</span>
+  <span class="hljs-attr">prerelease:</span>
 
-    <span class="pl-s">Linting</span> <span class="pl-s">config</span> <span class="hljs-attr">files:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-finepack</span>
+    <span class="hljs-attr">Linting config files:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-finepack</span>
 
-<span class="hljs-attr">  postrelease:</span>
+  <span class="hljs-attr">postrelease:</span>
 
-    <span class="pl-s">Generating</span> <span class="pl-s">CHANGELOG</span> <span class="hljs-attr">file:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-changelog</span>
+    <span class="hljs-attr">Generating CHANGELOG file:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-changelog</span>
 
-    <span class="pl-s">Committing</span> <span class="pl-s">new</span> <span class="hljs-attr">version:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
-<span class="hljs-attr">      command:</span> <span class="pl-s">git</span> <span class="pl-s">add</span> <span class="pl-s">CHANGELOG.md</span> <span class="pl-s">package.json</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">commit</span> <span class="hljs-bullet">-m</span> <span class="pl-s">&quot;Release $newVersion&quot;</span>
+    <span class="hljs-attr">Committing new version:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-terminal</span>
+      <span class="hljs-attr">command:</span> <span class="pl-s">git</span> <span class="pl-s">add</span> <span class="pl-s">CHANGELOG.md</span> <span class="pl-s">package.json</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">commit</span> <span class="pl-s">-m</span> <span class="pl-s">&quot;Release $newVersion&quot;</span>
 
-    <span class="pl-s">Detecting</span> <span class="pl-s">problems</span> <span class="pl-s">before</span> <span class="hljs-attr">publish:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
-<span class="hljs-attr">      command:</span> <span class="pl-s">git-dirty</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">npm</span> <span class="pl-s">test</span>
+    <span class="hljs-attr">Detecting problems before publish:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-terminal</span>
+      <span class="hljs-attr">command:</span> <span class="pl-s">git-dirty</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">npm</span> <span class="pl-s">test</span>
 
-    <span class="pl-s">Publishing</span> <span class="pl-s">tag</span> <span class="pl-s">at</span> <span class="hljs-attr">Github:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
-<span class="hljs-attr">      command:</span> <span class="pl-s">git</span> <span class="pl-s">tag</span> <span class="pl-s">$newVersion</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">push</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">push</span> <span class="hljs-bullet">--tags</span>
+    <span class="hljs-attr">Publishing tag at Github:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-terminal</span>
+      <span class="hljs-attr">command:</span> <span class="pl-s">git</span> <span class="pl-s">tag</span> <span class="pl-s">$newVersion</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">push</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">git</span> <span class="pl-s">push</span> <span class="pl-s">--tags</span>
 
-    <span class="pl-s">Publishing</span> <span class="pl-s">at</span> <span class="hljs-attr">NPM:</span>
-<span class="hljs-attr">      plugin:</span> <span class="pl-s">bumped-terminal</span>
-<span class="hljs-attr">      command:</span> <span class="pl-s">npm</span> <span class="pl-s">publish</span>
+    <span class="hljs-attr">Publishing at NPM:</span>
+      <span class="hljs-attr">plugin:</span> <span class="pl-s">bumped-terminal</span>
+      <span class="hljs-attr">command:</span> <span class="pl-s">npm</span> <span class="pl-s">publish</span>
 </code></pre>
 <blockquote>
 <p><strong>NOTE</strong>: The file is generated in YAML format, but currently it supports JSON or CSON as well.</p>
