@@ -123,6 +123,11 @@
         "slug": "changelog",
         "headings": [
           {
+            "title": "<small>0.12.2 (2019-12-09)</small>",
+            "depth": 2,
+            "id": "lesssmallgreater0.12.2-(2019-12-09)lesssmallgreater"
+          },
+          {
             "title": "0.12.1 (2019-12-09)",
             "depth": 2,
             "id": "0.12.1-(2019-12-09)"
@@ -441,6 +446,11 @@
       "pageTitle": "Changelog",
       "slug": "changelog",
       "headings": [
+        {
+          "title": "<small>0.12.2 (2019-12-09)</small>",
+          "depth": 2,
+          "id": "lesssmallgreater0.12.2-(2019-12-09)lesssmallgreater"
+        },
         {
           "title": "0.12.1 (2019-12-09)",
           "depth": 2,
