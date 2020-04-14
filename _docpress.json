@@ -123,6 +123,11 @@
         "slug": "changelog",
         "headings": [
           {
+            "title": "<small>0.13.3 (2020-04-14)</small>",
+            "depth": 2,
+            "id": "lesssmallgreater0.13.3-(2020-04-14)lesssmallgreater"
+          },
+          {
             "title": "<small>0.13.2 (2020-04-07)</small>",
             "depth": 2,
             "id": "lesssmallgreater0.13.2-(2020-04-07)lesssmallgreater"
@@ -461,6 +466,11 @@
       "pageTitle": "Changelog",
       "slug": "changelog",
       "headings": [
+        {
+          "title": "<small>0.13.3 (2020-04-14)</small>",
+          "depth": 2,
+          "id": "lesssmallgreater0.13.3-(2020-04-14)lesssmallgreater"
+        },
         {
           "title": "<small>0.13.2 (2020-04-07)</small>",
           "depth": 2,
